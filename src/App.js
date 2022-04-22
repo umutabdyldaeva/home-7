@@ -31,19 +31,20 @@ const comment = [
 ]
 
 function App() {
-  return (
-    <div className='App'>
-      {comment.map((el) => {
+  return(
+     <div className='App'> 
+     {comment.map((el) => {
         return(
-          <Comment key = {el.id}
+       <Comment key = {Math.random()}
               author = {el.author}
               text = {el.text}
               date = {el.date}/>
         )
-      })
-      } 
-    </div>
-  );
-}
+     
+        })} 
+    </div> 
+    )   
+  }
+      
 
 export default App;
